@@ -7,8 +7,9 @@
   --color-shu: #cc2200;
 }
 
-* {
-  margin: 0;
+*,
+*::before,
+*::after {
   padding: 0;
   box-sizing: border-box;
 }
