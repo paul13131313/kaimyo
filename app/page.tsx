@@ -170,7 +170,7 @@ export default function Home() {
               className="w-full border-b-2 border-[#1a1a1a] bg-transparent text-center text-2xl py-3 outline-none focus:border-[#cc2200] transition-colors"
               style={{ fontFamily: "var(--font-serif), serif" }}
               onKeyDown={(e) => {
-                if (e.key === "Enter") handleGenerate();
+                if (e.key === "Enter" && !e.nativeEvent.isComposing) handleGenerate();
               }}
             />
             <button
